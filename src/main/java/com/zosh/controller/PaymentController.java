@@ -81,7 +81,7 @@ public class PaymentController {
 			paymentLinkRequest.put("reminder_enable", true);
 
 			// Set the callback URL and method
-			paymentLinkRequest.put("callback_url", "https://ecommerce-bivash.vercel.app/payment/" + orderId + "?");
+			paymentLinkRequest.put("callback_url", "https://ecommerce-bivash.vercel.app/payment/" + orderId);
 			paymentLinkRequest.put("callback_method", "get");
 
 			// Create the payment link using the paymentLink.create() method
