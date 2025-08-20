@@ -82,7 +82,7 @@ public class PaymentController {
 
 			// Set the callback URL and method
 			paymentLinkRequest.put("callback_url",
-					" const RAILWAYHOST= 'https://ecommercebivashbackend2-production.up.railway.app/" + orderId + "?");
+					"https://ecommercebivashbackend2-production.up.railway.app/payment/" + orderId + "?");
 			paymentLinkRequest.put("callback_method", "get");
 
 			// Create the payment link using the paymentLink.create() method
